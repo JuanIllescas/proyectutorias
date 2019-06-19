@@ -27,8 +27,5 @@ select * from autentifiacion;
 create table consulta(id_consulta int(10) primary key not null
 ) engine = innodb;
 
-Create TABLE Formato
-(imagen, igual);
-
 
 
