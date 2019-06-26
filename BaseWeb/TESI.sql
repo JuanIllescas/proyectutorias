@@ -15,7 +15,7 @@ create table alumnos(
     id int(20) auto_increment not null primary key,
     tipo varchar(45) not null,
     index (tipo),
-    foreign key (id) references user(id),
+    foreign KEY (id) references user(id),
     info_tutor longblob,
     bitacora longblob,
     pat longblob,
