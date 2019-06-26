@@ -12,7 +12,7 @@ create table user(
 )engine = innodb;
 
 create table alumnos(
-    id int(20) auto_increment not null primary key,
+    id int(20) auto_increment not null primary key, 
     tipo varchar(45) not null,
     index (tipo),
     foreign KEY (id) references user(id),
