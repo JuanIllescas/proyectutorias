@@ -45,10 +45,18 @@
 
     <form action="signup.php" method="post">
         
-        <p>Nombre</p>
+        <p>Ingresa tu nombre(s)</p>
         <input type="text" name="nombre" placeholder="Nombre">
-        <p>Apellidos</p>
-        <input type="text" name="apellido" placeholder="Apellido">
+        <p>Ingresa tus apellidos</p>
+        <input type="text" name="apellido" placeholder="Apellidos">
+        <p>Ingresa tu edad</p>
+        <input type="text" name="edad" placeholder="Edad">
+        <p>Ingresa tu carrera</p>
+        <input type="text" name="carrera" placeholder="Carrera">
+        <p>Ingresa tu semestre</p>
+        <input type="text" name="semestre" placeholder="Semestre">
+        <p>Ingresa tu <E-mail></E-mail></p>
+        <input type="text" name="apellido" placeholder="Apellidos">
         <p>Ingresa tu Codigo (pass)</p>
         <input type="text" name="pass" placeholder="clave">
         <p>Ingresa Carrera (Carrera principal)</p>
