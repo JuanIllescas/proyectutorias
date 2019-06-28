@@ -44,12 +44,10 @@
     <?php endif; ?> 
 
     <form action="signup.php" method="post">
-        <p>Ingresa tu tipo</p>
-        <input type="radio" name="tipo" value="Alumno"> Alumno <br>
-        <input type="radio" name="tipo" value="Profesor"> Profesor <br>
-        <p>Ingresa tu nombre</p>
+        
+        <p>Nombre</p>
         <input type="text" name="nombre" placeholder="Nombre">
-        <p>Ingresa tu apellido</p>
+        <p>Apellidos</p>
         <input type="text" name="apellido" placeholder="Apellido">
         <p>Ingresa tu Codigo (pass)</p>
         <input type="text" name="pass" placeholder="clave">
