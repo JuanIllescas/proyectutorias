@@ -55,12 +55,12 @@
         <input type="text" name="carrera" placeholder="Carrera">
         <p>Ingresa tu semestre</p>
         <input type="text" name="semestre" placeholder="Semestre">
-        <p>Ingresa tu <E-mail></E-mail></p>
-        <input type="text" name="apellido" placeholder="Apellidos">
-        <p>Ingresa tu Codigo (pass)</p>
-        <input type="text" name="pass" placeholder="clave">
-        <p>Ingresa Carrera (Carrera principal)</p>
-        <input type="text" name="carrera" placeholder="Carrera">
+        <p>Ingresa tu E-mail</p>
+        <input type="text" name="e-mail" placeholder="E-mail">
+        <p>Ingresa tu matrícula</p>
+        <input type="text" name="matricula" placeholder="Matricula">
+        <p>Ingresa una contraseña</p>
+        <input type="text" name="contraseña" placeholder="Contraseña">
         <br>
         <input type="submit" value="Aceptar" >
     </form>
