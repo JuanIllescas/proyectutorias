@@ -1,7 +1,7 @@
 drop database tutorias;
 create database tutorias;
 use tutorias;
-
+// pantalla de carreras  
 /*  carreras
     1.- Administracion
         1.1.-
