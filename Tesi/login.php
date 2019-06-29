@@ -34,7 +34,7 @@
         require 'partials/header.php';
     ?>
     <H2>AUTENTIFICACION</H2>
-    <img src="assets/img/e_pATIO.jpg" width="800">
+    <img src="assets/img/e_pATIO.jpg" width="600">
     <br>
 
     <?php if(!empty($message)): ?>

@@ -63,6 +63,8 @@ INSERT INTO alumno(nombre_u, apellidos_a, años, id_carrera, semestre, email, ma
 ('Marco','Antonio',21,2,4,'algo2@gmail.com',123321,'1111111'),
 ('Paola','Rasco',23,4,6,'algo3@gmail.com',321654,'324651');
 
+select * from alumno;
+
 create table profesore(
     id_pro int(20) auto_increment not null  primary key,
     nombre_p varchar(45)not null,

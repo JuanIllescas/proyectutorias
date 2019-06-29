@@ -4,14 +4,17 @@
 
     $message = '';
 
-    if(!empty($_POST['tipo']) && !empty($_POST['nombre']) && !empty($_POST['apellido']) && !empty($_POST['pass']) && !empty($_POST['carrera'])){
-        $sql= "INSERT INTO user (tipo, nombre, apellido, pass, carrera) VALUES (:tipo, :nombre, :apellido, :pass, :carrera )";
+    if(!empty($_POST['nombre_u']) && !empty($_POST['apellidos_a']) && !empty($_POST['años']) && !empty($_POST['id_carrera']) && !empty($_POST['semestre'])&&!empty($_POST['email'])&&!empty($_POST['matricula'])&&!empty($_POST['contraseña'])){
+        $sql= "INSERT INTO alumno (nombre_u, apellidos_a, años, pass, id_carrera, semestre, email, matricula, contraseña) VALUES (:tipo, :nombre, :apellido, :pass, :carrera )";
         $stmt= $conn->prepare($sql);
-        $stmt->bindParam(':tipo',$_POST['tipo']);
-        $stmt->bindParam(':nombre',$_POST['nombre']);
-        $stmt->bindParam(':apellido',$_POST['apellido']);
-        $stmt->bindParam(':pass',$_POST['pass']);
-        $stmt->bindParam(':carrera',$_POST['carrera']);
+        $stmt->bindParam(':nombre_u',$_POST['nomre_u']);
+        $stmt->bindParam(':apellidos_a',$_POST['nombre']);
+        $stmt->bindParam(':años',$_POST['apellido']);
+        $stmt->bindParam(':id_carrera',$_POST['pass']);
+        $stmt->bindParam(':semestre',$_POST['carrera']);
+        $stmt->bindParam(':email',$_POST['carrera']);
+        $stmt->bindParam(':matricula',$_POST['carrera']);
+        $stmt->bindParam(':contraseña',$_POST['carrera']);
 
         if($stmt->execute()){
             $message = 'Successfully created new user';
@@ -36,7 +39,7 @@
         require 'partials/header.php';
     ?>
     <H2>REGISTRO TUTORIAS</H2>
-    <img src="assets/img/e_prin.jpg" width="800">
+    <img src="assets/img/e_prin.jpg" width="600">
     <br>
 
     <?php if(!empty($message)): ?>
@@ -60,6 +63,8 @@
         <p>Ingresa tu matrícula</p>
         <input type="text" name="matricula" placeholder="Matricula">
         <p>Ingresa una contraseña</p>
+        <input type="text" name="contraseña" placeholder="Contraseña">
+        <p>Confirme su contraseña</p>
         <input type="text" name="contraseña" placeholder="Contraseña">
         <br>
         <input type="submit" value="Aceptar" >
