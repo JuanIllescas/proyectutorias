@@ -12,7 +12,7 @@
 <body>
     <?php 
         require 'partials/header.php';
-    ?>
+    ?> //Menu de diferentes tipos de reportes de los tutores
     <H2>REPORTES DE TUTORIAS</H2>
     <img src="assets/img/salon_4.jpg" width="600">
     <br>

@@ -15,7 +15,7 @@
     ?>
     <H2>MENU</H2>
     <img src="assets/img/e_prin.jpg" width="600">
-    <br>
+    <br> //menú de formatos  del docente
     <a href="Menu.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Identificacion del tutor</a>
     <a href="Menu.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Informacion</a>
     <a href="Menu.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Chat</a>

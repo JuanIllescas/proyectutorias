@@ -3,7 +3,7 @@
     require 'database.php';
 
     $message = '';
-
+        // Información para Registro de Alumnos y Docentes
     if(!empty($_POST['nombre_u']) && !empty($_POST['apellidos_a']) && !empty($_POST['años']) && !empty($_POST['id_carrera']) && !empty($_POST['semestre'])&&!empty($_POST['email'])&&!empty($_POST['matricula'])&&!empty($_POST['contraseña'])){
         $sql= "INSERT INTO alumno (nombre_u, apellidos_a, años, pass, id_carrera, semestre, email, matricula, contraseña) VALUES (:tipo, :nombre, :apellido, :pass, :carrera )";
         $stmt= $conn->prepare($sql);
